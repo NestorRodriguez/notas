@@ -1,9 +1,49 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>registro</ion-title>
-  </ion-toolbar>
+<ion-header no-border>
+    <ion-toolbar class="headFoot">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Registro</ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="colorFondo">
+    <form onsubmit="processForm(event)">
+        <ion-list class="colorFondo" lines="inset">
+            <ion-item class="colorFondo">
+                <ion-label position="floating">Nombres</ion-label>
+                <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+            </ion-item>
 
+            <ion-item class="colorFondo">
+                <ion-label>Tipo de Documento
+                    <ion-select placeholder="Seleccione" interface="popover">
+                        <ion-select-option value="cc">Cédula de Ciudadanía</ion-select-option>
+                        <ion-select-option value="ce">Cédula de Extranjería</ion-select-option>
+                        <ion-select-option value="ti">Tarjeta de Identidad</ion-select-option>
+                        <ion-select-option value="pp">Pasaporte</ion-select-option>
+                    </ion-select>
+                </ion-label>
+            </ion-item>
+
+            <ion-item class="colorFondo">
+                <ion-label position="floating">Número de Documento</ion-label>
+                <ion-input required type="text" oninput="handleNumeroDocumento(event)"></ion-input>
+            </ion-item>
+
+            <ion-item class="colorFondo">
+                <ion-label position="floating">Correo Electrónico</ion-label>
+                <ion-input required type="email" oninput="handleEmail(event)"></ion-input>
+            </ion-item>
+
+        </ion-list>
+
+        <div>
+            <ion-button class="buttRegistro" type="button">Regresar</ion-button>
+            <ion-button class="buttRegistro" type="submit">Guardar</ion-button>
+        </div>
+    </form>
 </ion-content>
+<ion-footer>
+    <ion-toolbar class="headFoot"></ion-toolbar>
+</ion-footer>
