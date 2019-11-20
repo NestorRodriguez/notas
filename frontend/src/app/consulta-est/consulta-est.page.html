@@ -1,0 +1,69 @@
+<ion-header no-border>
+    <ion-toolbar class="headFoot">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Consulta de Estudiante</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="colorFondo">
+    <form onsubmit="processForm(event)">
+        <ion-list class="colorFondo" lines="inset">
+
+            <ion-item class="colorFondo">
+                <ion-label>Buscar por:</ion-label>
+                <ion-select placeholder="Seleccione" interface="popover">
+                    <ion-select-option value="nombres">Nombres</ion-select-option>
+                    <ion-select-option value="numDocumento">Número de Documento</ion-select-option>
+                    <ion-select-option value="grado">Grado</ion-select-option>
+                    <ion-select-option value="correoElectronico">Correo Electrónico</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item class="colorFondo">
+                <ion-label position="floating">Documento</ion-label>
+                <ion-input required type="text" oninput="handleNumeroDocumento(event)"></ion-input>
+            </ion-item>
+
+            <ion-item class="colorFondo">
+                <ion-label position="floating">Estudiante</ion-label>
+            </ion-item>
+
+            <ion-item class="colorFondo">
+                <ion-label>Reporte por:</ion-label>
+                <ion-select placeholder="Seleccione" interface="popover">
+                    <ion-select-option value="nombres">Estudiante</ion-select-option>
+                    <ion-select-option value="numDocumento">Grado</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item class="colorFondo">
+                <ion-label>Elegir materia(s):</ion-label>
+                <ion-select multiple="true" cancelText="Cancelar" okText="Aceptar" placeholder="Seleccione" interface="popover">
+                    <ion-select-option value="nombres">Materia1</ion-select-option>
+                    <ion-select-option value="numDocumento">Materia2</ion-select-option>
+                    <ion-select-option value="grado">Materia3</ion-select-option>
+                    <ion-select-option value="correoElectronico">Materia4</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+        </ion-list>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col class="ion-padding">
+                    <ion-button expand="block" class="buttRegGrMat" type="button">Regresar</ion-button>
+                </ion-col>
+                <ion-col class="ion-padding">
+                    <ion-button expand="block" class="buttRegGrMat" type="submit">Guardar</ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+    </form>
+
+</ion-content>
+<ion-footer>
+    <ion-toolbar class="headFoot"></ion-toolbar>
+</ion-footer>

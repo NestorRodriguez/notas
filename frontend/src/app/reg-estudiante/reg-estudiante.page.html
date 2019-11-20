@@ -27,21 +27,20 @@
             </ion-item>
 
             <ion-item class="colorFondo">
-                <ion-label>Grado
-                    <ion-select placeholder="Seleccione" interface="popover">
-                        <ion-select-option value="uno">1° Primero</ion-select-option>
-                        <ion-select-option value="dos">2° Segundo</ion-select-option>
-                        <ion-select-option value="tercero">3° Tercero</ion-select-option>
-                        <ion-select-option value="cuarto">4° Cuarto</ion-select-option>
-                        <ion-select-option value="quinto">5° Quinto</ion-select-option>
-                        <ion-select-option value="sexto">6° Sexto</ion-select-option>
-                        <ion-select-option value="tercero">7° Séptimo</ion-select-option>
-                        <ion-select-option value="cuarto">8° Octavo</ion-select-option>
-                        <ion-select-option value="sexto">9° Noveno</ion-select-option>
-                        <ion-select-option value="tercero">10° Décimo</ion-select-option>
-                        <ion-select-option value="cuarto">11° Undécimo</ion-select-option>
-                    </ion-select>
-                </ion-label>
+                <ion-label>Grado</ion-label>
+                <ion-select placeholder="Seleccione" interface="popover">
+                    <ion-select-option value="uno">1° Primero</ion-select-option>
+                    <ion-select-option value="dos">2° Segundo</ion-select-option>
+                    <ion-select-option value="tercero">3° Tercero</ion-select-option>
+                    <ion-select-option value="cuarto">4° Cuarto</ion-select-option>
+                    <ion-select-option value="quinto">5° Quinto</ion-select-option>
+                    <ion-select-option value="sexto">6° Sexto</ion-select-option>
+                    <ion-select-option value="tercero">7° Séptimo</ion-select-option>
+                    <ion-select-option value="cuarto">8° Octavo</ion-select-option>
+                    <ion-select-option value="sexto">9° Noveno</ion-select-option>
+                    <ion-select-option value="tercero">10° Décimo</ion-select-option>
+                    <ion-select-option value="cuarto">11° Undécimo</ion-select-option>
+                </ion-select>
             </ion-item>
 
             <ion-item class="colorFondo">
@@ -56,10 +55,17 @@
 
         </ion-list>
 
-        <div>
-            <ion-button class="buttRegEstudiante" type="button">Regresar</ion-button>
-            <ion-button class="buttRegEstudiante" type="submit">Guardar</ion-button>
-        </div>
+        <ion-grid>
+            <ion-row>
+                <ion-col class="ion-padding">
+                    <ion-button expand="block" class="buttRegEstudiante" type="button">Regresar</ion-button>
+                </ion-col>
+                <ion-col class="ion-padding">
+                    <ion-button expand="block" class="buttRegEstudiante" type="submit">Guardar</ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
     </form>
 </ion-content>
 <ion-footer>

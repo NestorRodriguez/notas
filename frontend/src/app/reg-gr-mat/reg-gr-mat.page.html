@@ -1,0 +1,46 @@
+<ion-header no-border>
+    <ion-toolbar class="headFoot">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Registro de Grados Y Materias</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="colorFondo">
+    <form onsubmit="processForm(event)">
+        <ion-list class="colorFondo" lines="inset">
+            <ion-item class="colorFondo">
+                <ion-label position="floating">Grado</ion-label>
+                <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+            </ion-item>
+
+            <ion-item class="colorFondo">
+                <ion-label position="floating">Grupo</ion-label>
+                <ion-input required type="text" oninput="handleNumeroDocumento(event)"></ion-input>
+            </ion-item>
+
+            <ion-item class="colorFondo">
+                <ion-label position="floating">Materia</ion-label>
+                <ion-input required type="text" oninput="handleNumeroDocumento(event)"></ion-input>
+            </ion-item>
+
+        </ion-list>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col class="ion-padding">
+                    <ion-button expand="block" class="buttRegGrMat" type="button">Regresar</ion-button>
+                </ion-col>
+                <ion-col class="ion-padding">
+                    <ion-button expand="block" class="buttRegGrMat" type="submit">Guardar</ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+    </form>
+
+</ion-content>
+<ion-footer>
+    <ion-toolbar class="headFoot"></ion-toolbar>
+</ion-footer>
