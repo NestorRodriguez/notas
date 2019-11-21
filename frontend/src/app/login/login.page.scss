@@ -1,18 +1,19 @@
+* {
+    color: #189231;
+}
+
 .img {
     margin: 20%;
 }
 
-.loginInput01 {
-    margin: 0 10%;
+.colorFondo {
+    --ion-background-color: #D7DC3A !important;
 }
 
-.loginInput02 {
-    margin: 0 14%;
-    text-align: left
+.headFoot {
+    --background: #3751FE;
 }
 
-.buttons {
-    width: 100%;
-    display: flex;
-    text-align: center;
+.buttRegGrMat {
+    --background: #3751FE;
 }
