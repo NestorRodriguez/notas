@@ -8,15 +8,12 @@
 </ion-header>
 
 <ion-content class="colorFondo">
-    <div>
-        <ion-button class="buttMenu" size="large">Registro de Estudiante</ion-button>
+   
+        <ion-button expand="block" class="buttMenu" [routerLink]="['/reg-estudiante']" size="large">Registro de Estudiante</ion-button>
+        <ion-button expand="block" class="buttMenu" [routerLink]="['/reg-profesor']" size="large">Registro de Profesor</ion-button>
+        <ion-button  expand="block" class="buttMenu" [routerLink]="['/reg-gr-mat']" size="large">Registro de Grados Y Materias</ion-button>
+        <ion-button  expand="block" class="buttMenu" [routerLink]="['/consulta-est']" size="large">Consulta de Estudiante</ion-button>
 
-        <ion-button class="buttMenu" size="large">Registro de Profesor</ion-button>
-
-        <ion-button class="buttMenu" size="large">Registro de Grados Y Materias</ion-button>
-
-        <ion-button class="buttMenu" size="large">Consulta de Estudiante</ion-button>
-    </div>
 </ion-content>
 
 <ion-footer>

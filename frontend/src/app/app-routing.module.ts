@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'reg-profesor', loadChildren: './reg-profesor/reg-profesor.module#RegProfesorPageModule' },  { path: 'reg-gr-mat', loadChildren: './reg-gr-mat/reg-gr-mat.module#RegGrMatPageModule' },
   { path: 'consulta-est', loadChildren: './consulta-est/consulta-est.module#ConsultaEstPageModule' },
   { path: 'reg-notas', loadChildren: './reg-notas/reg-notas.module#RegNotasPageModule' },
+  { path: 'recuperarcont', loadChildren: './recuperarcont/recuperarcont.module#RecuperarcontPageModule' },
 
 ];
 
