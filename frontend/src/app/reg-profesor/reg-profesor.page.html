@@ -8,6 +8,7 @@
 </ion-header>
 
 <ion-content class="colorFondo">
+    <ion-img class="img" src="./assets/clipboard.png" slot=""></ion-img>
     <form onsubmit="processForm(event)">
         <ion-list class="colorFondo" lines="inset">
             <ion-item class="colorFondo">
@@ -26,7 +27,12 @@
             </ion-item>
 
             <ion-item class="colorFondo">
-                <ion-label>Grado</ion-label>
+                <ion-label position="floating">Número de Documento</ion-label>
+                <ion-input required type="text" oninput="handleNumeroDocumento(event)"></ion-input>
+            </ion-item>
+
+            <ion-item class="colorFondo">
+                <ion-label>Grado(s)</ion-label>
                 <ion-select multiple="true" cancelText="Cancelar" okText="Elegir" placeholder="Seleccione" interface="popover">
                     <ion-select-option value="uno">1° Primero</ion-select-option>
                     <ion-select-option value="dos">2° Segundo</ion-select-option>
@@ -40,11 +46,6 @@
                     <ion-select-option value="tercero">10° Décimo</ion-select-option>
                     <ion-select-option value="cuarto">11° Undécimo</ion-select-option>
                 </ion-select>
-            </ion-item>
-
-            <ion-item class="colorFondo">
-                <ion-label position="floating">Número de Documento</ion-label>
-                <ion-input required type="text" oninput="handleNumeroDocumento(event)"></ion-input>
             </ion-item>
 
             <ion-item class="colorFondo">
