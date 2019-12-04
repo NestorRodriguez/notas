@@ -10,6 +10,7 @@ export class ConsultaEstPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

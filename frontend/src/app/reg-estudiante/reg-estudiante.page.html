@@ -8,6 +8,7 @@
 </ion-header>
 
 <ion-content class="colorFondo">
+    <ion-img class="img" src="./assets/clipboard.png" slot=""></ion-img>
     <form onsubmit="processForm(event)">
         <ion-list class="colorFondo" lines="inset">
             <ion-item class="colorFondo">
@@ -16,14 +17,13 @@
             </ion-item>
 
             <ion-item class="colorFondo">
-                <ion-label>Tipo de Documento
-                    <ion-select placeholder="Seleccione" interface="popover">
-                        <ion-select-option value="cc">Cédula de Ciudadanía</ion-select-option>
-                        <ion-select-option value="ce">Cédula de Extranjería</ion-select-option>
-                        <ion-select-option value="ti">Tarjeta de Identidad</ion-select-option>
-                        <ion-select-option value="pp">Pasaporte</ion-select-option>
-                    </ion-select>
-                </ion-label>
+                <ion-label>Tipo de Documento</ion-label>
+                <ion-select placeholder="Seleccione" interface="popover">
+                    <ion-select-option value="cc">Cédula de Ciudadanía</ion-select-option>
+                    <ion-select-option value="ce">Cédula de Extranjería</ion-select-option>
+                    <ion-select-option value="ti">Tarjeta de Identidad</ion-select-option>
+                    <ion-select-option value="pp">Pasaporte</ion-select-option>
+                </ion-select>
             </ion-item>
 
             <ion-item class="colorFondo">

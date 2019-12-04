@@ -4,10 +4,13 @@
             <ion-back-button></ion-back-button>
         </ion-buttons>
         <ion-title>Consulta de Estudiante</ion-title>
+        <ion-label slot="end">drhdfhd</ion-label>
+        <ion-icon name="contact" slot="end"></ion-icon>
     </ion-toolbar>
 </ion-header>
 
 <ion-content class="colorFondo">
+    <ion-img class="img" src="./assets/clipboard.png" slot=""></ion-img>
     <form onsubmit="processForm(event)">
         <ion-list class="colorFondo" lines="inset">
 
@@ -22,7 +25,7 @@
             </ion-item>
 
             <ion-item class="colorFondo">
-                <ion-label>Documento</ion-label>
+                <ion-label position="floating">Número de Documento:</ion-label>
                 <ion-input required type="text" oninput="handleNumeroDocumento(event)"></ion-input>
             </ion-item>
 
@@ -41,10 +44,10 @@
             <ion-item class="colorFondo">
                 <ion-label>Elegir materia(s):</ion-label>
                 <ion-select multiple="true" cancelText="Cancelar" okText="Aceptar" placeholder="Seleccione" interface="popover">
-                    <ion-select-option value="nombres">Materia1</ion-select-option>
-                    <ion-select-option value="numDocumento">Materia2</ion-select-option>
-                    <ion-select-option value="grado">Materia3</ion-select-option>
-                    <ion-select-option value="correoElectronico">Materia4</ion-select-option>
+                    <ion-select-option value="materia1">Materia1</ion-select-option>
+                    <ion-select-option value="materia2">Materia2</ion-select-option>
+                    <ion-select-option value="materia3">Materia3</ion-select-option>
+                    <ion-select-option value="materia4">Materia4</ion-select-option>
                 </ion-select>
             </ion-item>
 

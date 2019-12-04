@@ -16,19 +16,17 @@
                 <ion-label>
                     Usuario
                 </ion-label>
-                <ion-input type="text" required ngModel #email="ngModel" name="email" placeholder="" maxLength="200" minLength="3"></ion-input>
+                <ion-input type="text" name="usuario" placeholder="" maxLength="200" minLength="3"></ion-input>
                 <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></ion-input> -->
             </ion-item>
             <ion-item class="colorFondo">
                 <ion-label>
                     Contraseña
                 </ion-label>
-                <ion-input type="password" required ngModel #clave="ngModel" name="clave" placeholder="" maxLength="200" minLength="3"></ion-input>
+                <ion-input type="password" name="clave" placeholder="" maxLength="200" minLength="3"></ion-input>
             </ion-item>
 
-            <h6><u>¿Olvidó su contraseña?</u></h6>
-
-            <h6><u>Registrarse</u></h6>
+            <h6 [routerLink]="['/registro']"><u>Registrarse</u></h6>
 
             <ion-toolbar class="colorFondo">
             </ion-toolbar>
